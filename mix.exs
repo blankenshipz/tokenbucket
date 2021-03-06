@@ -24,7 +24,8 @@ defmodule TokenBucket.MixProject do
 
   defp deps do
     [
-      {:mutex, "~> 1.3"}
+      {:mutex, "~> 1.3"},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 
@@ -37,7 +38,7 @@ defmodule TokenBucket.MixProject do
       # This option is only needed when you don't want to use the OTP application name
       name: "tokenbucket",
       # These are the default files included in the package
-      files: ~w(lib .formatter.exs mix.exs README* src),
+      files: ~w(lib .formatter.exs mix.exs README*),
       licenses: ["Apache-2.0"],
       links: %{"GitHub" => "https://github.com/blankenshipz/tokenbucket"}
     ]
