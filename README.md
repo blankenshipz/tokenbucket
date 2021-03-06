@@ -1,6 +1,7 @@
 # TokenBucket
 
 A Simple GenServer implementation of the [TokenBucket Algorithm](https://en.wikipedia.org/wiki/Token_bucket)
+used primarily for rate limiting
 
 ## Installation
 
