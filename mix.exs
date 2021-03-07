@@ -7,7 +7,7 @@ defmodule TokenBucket.MixProject do
       version: "0.1.0",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
-      build_embedded: Mix.env == :prod,
+      build_embedded: Mix.env() == :prod,
       deps: deps(),
       description: description(),
       package: package(),
@@ -24,7 +24,6 @@ defmodule TokenBucket.MixProject do
 
   defp deps do
     [
-      {:mutex, "~> 1.3"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
