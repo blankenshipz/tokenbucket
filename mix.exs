@@ -4,7 +4,7 @@ defmodule TokenBucket.MixProject do
   def project do
     [
       app: :tokenbucket,
-      version: "0.1.0",
+      version: "1.0.0",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       build_embedded: Mix.env() == :prod,
